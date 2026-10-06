@@ -544,7 +544,7 @@ ul{
 
 main{
   padding:26px 24px 70px;
-  max-width:1400px;
+  max-width:1600px;
 }
 
 .crumb{
@@ -697,7 +697,6 @@ body.dark .wi{
   border:0;
 }
 
-/* Soft, colorful accents for dashboard widgets */
 .w .wi-dollar,
 .w .wi-bar{
   background:#fff0d9;
@@ -948,6 +947,341 @@ tr:last-child td{
   padding:60px;
   text-align:center;
   color:var(--muted);
+}
+
+
+/* ================= OPERATIONS DASHBOARD STYLES ================= */
+
+.op-app {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.op-topbar {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.op-select,
+.op-date-control,
+.op-pdf-btn,
+.op-settings {
+    height: 32px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+}
+
+.op-select {
+    width: 128px;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.op-date-control {
+    overflow: hidden;
+}
+
+.op-arrow {
+    width: 28px;
+    height: 32px;
+    border: none;
+    background: var(--card);
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.op-date {
+    min-width: 92px;
+    height: 100%;
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 11px;
+}
+
+.op-pdf-btn {
+    width: 29px;
+    background: #d8192f;
+    color: white;
+    border-color: #d8192f;
+    cursor: pointer;
+}
+
+.kpi-wrap {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 2px 6px;
+    scrollbar-width: thin;
+    margin-bottom: 15px;
+}
+
+.kpi {
+    flex: 0 0 156px;
+    height: 108px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    box-shadow: 0 2px 5px rgba(34, 44, 75, 0.06);
+    padding: 10px 9px 7px;
+    position: relative;
+}
+
+.kpi-head {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.kpi-icon {
+    width: 23px;
+    height: 23px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.kpi-icon.blue { background: #3e74dc; }
+.kpi-icon.violet { background: #ad44ee; }
+.kpi-icon.red { background: #ff4260; }
+.kpi-icon.mint { background: #27c981; }
+.kpi-icon.orange { background: #ff7745; }
+.kpi-icon.green { background: #09b977; }
+.kpi-icon.purple { background: #9c36e8; }
+
+.kpi-chart {
+    margin-left: auto;
+    color: #00a85c;
+    font-size: 15px;
+}
+
+.kpi-value {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.kpi-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    left: 9px;
+    right: 9px;
+    bottom: 6px;
+    border-top: 1px solid var(--line);
+}
+
+.kpi-footer div {
+    font-size: 9px;
+    padding-top: 4px;
+    color: var(--muted);
+}
+
+.kpi-footer div + div {
+    text-align: right;
+    border-left: 1px solid var(--line);
+}
+
+.kpi-footer b {
+    font-size: 10px;
+    color: var(--text);
+}
+
+.op-dashboard {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    min-height: 370px;
+    box-shadow: 0 1px 4px rgba(25, 36, 68, 0.08);
+    overflow: hidden;
+}
+
+.op-hero {
+    padding: 9px 12px 16px;
+}
+
+.op-progress-bar {
+    height: 42px;
+    background: #7544d8;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 9px;
+    font-size: 11px;
+}
+
+.op-start {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 160px;
+}
+
+.op-pill {
+    background: #f3d9ff;
+    color: #7d21b7;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.op-progress-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.op-track {
+    width: 108px;
+    height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.op-track span {
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: white;
+    border-radius: 20px;
+}
+
+.op-rows {
+    padding: 0 12px 16px;
+}
+
+.op-row {
+    display: grid;
+    grid-template-columns: 195px 1fr;
+    min-height: 76px;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+}
+
+.op-row:last-child {
+    border-bottom: none;
+}
+
+.op-row-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 11px;
+}
+
+.op-section-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 9px;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    flex: 0 0 27px;
+}
+
+.op-section-icon.pink { background: #f50091; }
+.op-section-icon.yellow { background: #ffc72d; }
+.op-section-icon.purple { background: #7043db; }
+
+.task-line {
+    display: flex;
+    align-items: flex-start;
+    min-width: 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+}
+
+.task {
+    width: 92px;
+    min-width: 92px;
+    position: relative;
+    text-align: center;
+    font-size: 9px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.task:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 56px;
+    width: 60px;
+    height: 1px;
+    background: var(--line);
+    z-index: 0;
+}
+
+.task-circle {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    background: var(--card);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.task:hover .task-circle {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(61, 49, 120, 0.18);
+}
+
+.task.red { color: #ff274e; }
+.task.yellow { color: #ffbb19; }
+
+.task-label {
+    line-height: 10px;
+    margin-top: 3px;
+    min-height: 20px;
+    color: var(--text);
+}
+
+.badge {
+    position: absolute;
+    z-index: 2;
+    top: -4px;
+    right: 18px;
+    min-width: 13px;
+    height: 13px;
+    padding: 0 3px;
+    border-radius: 9px;
+    background: #d8002b;
+    color: white;
+    font-size: 7px;
+    display: grid;
+    place-items: center;
 }
 
 
@@ -1612,343 +1946,34 @@ const MENU = [
 
 
 /* =========================================================
-   DASHBOARD WIDGETS
+   DASHBOARD WIDGETS (Presets retain underlying support)
 ========================================================= */
 
 const WID = {
-
-sales:{
-  g:'Sales',
-  i:'dollar',
-  t:'Sales Today',
-  h:()=>`
-    <div class="big">$12,480</div>
-    <span class="up">+8.2%</span>
-    <span class="mut">vs last week</span>
-  `
-},
-
-salesChart:{
-  g:'Sales',
-  i:'bar',
-  t:'Weekly Sales',
-  wide:1,
-  h:()=>`
-    <div class="bars">
-      ${[55,62,48,70,85,95,78].map((v,i)=>
-        `<div style="height:${v}%">
-          <span>${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][i]}</span>
-        </div>`
-      ).join('')}
-    </div>
-    <div style="height:22px"></div>
-  `
-},
-
-onshift:{
-  g:'Team',
-  i:'users',
-  t:'Employees On Shift',
-  h:()=>`
-    <div class="big">24</div>
-    <span class="mut">of 31 scheduled</span>
-  `
-},
-
-shifts:{
-  g:'Team',
-  i:'clock',
-  t:"Today's Shifts",
-  h:()=>`
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Shift</th>
-        <th>Role</th>
-      </tr>
-
-      <tr>
-        <td>Aman</td>
-        <td>9–5</td>
-        <td>Cashier</td>
-      </tr>
-
-      <tr>
-        <td>Riya</td>
-        <td>11–7</td>
-        <td>Cook</td>
-      </tr>
-
-      <tr>
-        <td>Karan</td>
-        <td>3–11</td>
-        <td>Manager</td>
-      </tr>
-    </table>
-  `
-},
-
-timeoff:{
-  g:'Team',
-  i:'beach',
-  t:'Pending Time Off',
-  h:()=>`
-    <div class="big">3</div>
-    <span class="mut">requests waiting</span>
-    <br><br>
-    <button
-      class="btn g"
-      onclick="openPage('schedule|Team Center|Requests')">
-      Review
-    </button>
-  `
-},
-
-coverage:{
-  g:'Team',
-  i:'layers',
-  t:'Coverage Today',
-  h:()=>`
-    <span class="mut">Morning</span>
-    <div class="prog"><i style="width:90%"></i></div>
-
-    <span class="mut">Afternoon</span>
-    <div class="prog"><i style="width:70%"></i></div>
-
-    <span class="mut">Night</span>
-    <div class="prog"><i style="width:55%"></i></div>
-  `
-},
-
-punches:{
-  g:'Clock',
-  i:'clock',
-  t:'Live Punches',
-  h:()=>`
-    <div class="li">
-      <span>Aman</span>
-      <span class="up">IN 8:58</span>
-    </div>
-
-    <div class="li">
-      <span>Riya</span>
-      <span class="up">IN 10:55</span>
-    </div>
-
-    <div class="li">
-      <span>Sana</span>
-      <span class="dn">Late 12 min</span>
-    </div>
-  `
-},
-
-labor:{
-  g:'Clock',
-  i:'brief',
-  t:'Labor Cost %',
-  h:()=>`
-    <div class="big">27.4%</div>
-    <div class="prog">
-      <i style="width:27%"></i>
-    </div>
-    <span class="mut">Target 30%</span>
-  `
-},
-
-violations:{
-  g:'Clock',
-  i:'alert',
-  t:'Punch Violations',
-  h:()=>`
-    <div class="big">2</div>
-    <span class="mut">missed breaks today</span>
-  `
-},
-
-lowinv:{
-  g:'Inventory',
-  i:'package',
-  t:'Low Inventory',
-  h:()=>`
-    <div class="li">
-      <span>Cheese</span>
-      <span class="dn">4 left</span>
-    </div>
-
-    <div class="li">
-      <span>Cups</span>
-      <span class="dn">12 left</span>
-    </div>
-
-    <div class="li">
-      <span>Buns</span>
-      <span class="dn">20 left</span>
-    </div>
-  `
-},
-
-waste:{
-  g:'Inventory',
-  i:'trash',
-  t:'Waste Today',
-  h:()=>`
-    <div class="big">$142</div>
-    <span class="dn">+3%</span>
-    <span class="mut">vs avg</span>
-  `
-},
-
-cogs:{
-  g:'Inventory',
-  i:'receipt',
-  t:'COGS %',
-  h:()=>`
-    <div class="big">31.2%</div>
-
-    <div class="prog">
-      <i style="width:31%"></i>
-    </div>
-
-    <span class="mut">Target 32%</span>
-  `
-},
-
-orders:{
-  g:'Ordering',
-  i:'cart',
-  t:'Orders To Approve',
-  h:()=>`
-    <div class="big">6</div>
-    <span class="mut">pending orders</span>
-    <br><br>
-
-    <button
-      class="btn g"
-      onclick="openPage('ordering|Ordering')">
-      Open Ordering
-    </button>
-  `
-},
-
-deliveries:{
-  g:'Ordering',
-  i:'truck',
-  t:'Upcoming Deliveries',
-  h:()=>`
-    <div class="li">
-      <span>Sysco</span>
-      <span class="mut">Tomorrow</span>
-    </div>
-
-    <div class="li">
-      <span>Pepsi</span>
-      <span class="mut">Thu</span>
-    </div>
-  `
-},
-
-shortcuts:{
-  g:'General',
-  i:'star',
-  t:'My Shortcuts',
-
-  h:()=>S.pins.length
-
-    ? S.pins.map(k=>
-        `<span
-          class="tag"
-          onclick="openPage('${k}')">
-          ${lab(k)}
-        </span>`
-      ).join('')
-
-    : `<span class="mut">
-        Kisi page pe jaake "Pin to Home" dabao
-       </span>`
-},
-
-notes:{
-  g:'General',
-  i:'mega',
-  t:'Notes & Broadcast',
-
-  h:()=>`
-    <div class="li">
-      <span>Staff meeting Friday 4 PM</span>
-    </div>
-
-    <div class="li">
-      <span>New uniform policy</span>
-    </div>
-  `
-}
-
+  sales:{g:'Sales',i:'dollar',t:'Sales Today',h:()=>`<div class="big">$12,480</div><span class="up">+8.2%</span><span class="mut">vs last week</span>`},
+  salesChart:{g:'Sales',i:'bar',t:'Weekly Sales',wide:1,h:()=>`<div class="bars">${[55,62,48,70,85,95,78].map((v,i)=>`<div style="height:${v}\%"><span>${['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][i]}</span></div>`).join('')}</div><div style="height:22px"></div>`},
+  onshift:{g:'Team',i:'users',t:'Employees On Shift',h:()=>`<div class="big">24</div><span class="mut">of 31 scheduled</span>`},
+  shifts:{g:'Team',i:'clock',t:"Today's Shifts",h:()=>`<table><tr><th>Name</th><th>Shift</th><th>Role</th></tr><tr><td>Aman</td><td>9–5</td><td>Cashier</td></tr><tr><td>Riya</td><td>11–7</td><td>Cook</td></tr><tr><td>Karan</td><td>3–11</td><td>Manager</td></tr></table>`},
+  timeoff:{g:'Team',i:'beach',t:'Pending Time Off',h:()=>`<div class="big">3</div><span class="mut">requests waiting</span><br><br><button class="btn g" onclick="openPage('schedule|Team Center|Requests')">Review</button>`},
+  coverage:{g:'Team',i:'layers',t:'Coverage Today',h:()=>`<span class="mut">Morning</span><div class="prog"><i style="width:90%"></i></div><span class="mut">Afternoon</span><div class="prog"><i style="width:70%"></i></div><span class="mut">Night</span><div class="prog"><i style="width:55%"></i></div>`},
+  punches:{g:'Clock',i:'clock',t:'Live Punches',h:()=>`<div class="li"><span>Aman</span><span class="up">IN 8:58</span></div><div class="li"><span>Riya</span><span class="up">IN 10:55</span></div><div class="li"><span>Sana</span><span class="dn">Late 12 min</span></div>`},
+  labor:{g:'Clock',i:'brief',t:'Labor Cost %',h:()=>`<div class="big">27.4%</div><div class="prog"><i style="width:27%"></i></div><span class="mut">Target 30%</span>`},
+  violations:{g:'Clock',i:'alert',t:'Punch Violations',h:()=>`<div class="big">2</div><span class="mut">missed breaks today</span>`},
+  lowinv:{g:'Inventory',i:'package',t:'Low Inventory',h:()=>`<div class="li"><span>Cheese</span><span class="dn">4 left</span></div><div class="li"><span>Cups</span><span class="dn">12 left</span></div><div class="li"><span>Buns</span><span class="dn">20 left</span></div>`},
+  waste:{g:'Inventory',i:'trash',t:'Waste Today',h:()=>`<div class="big">$142</div><span class="dn">+3%</span><span class="mut">vs avg</span>`},
+  cogs:{g:'Inventory',i:'receipt',t:'COGS %',h:()=>`<div class="big">31.2%</div><div class="prog"><i style="width:31%"></i></div><span class="mut">Target 32%</span>`},
+  orders:{g:'Ordering',i:'cart',t:'Orders To Approve',h:()=>`<div class="big">6</div><span class="mut">pending orders</span><br><br><button class="btn g" onclick="openPage('ordering|Ordering')">Open Ordering</button>`},
+  deliveries:{g:'Ordering',i:'truck',t:'Upcoming Deliveries',h:()=>`<div class="li"><span>Sysco</span><span class="mut">Tomorrow</span></div><div class="li"><span>Pepsi</span><span class="mut">Thu</span></div>`},
+  shortcuts:{g:'General',i:'star',t:'My Shortcuts',h:()=>S.pins.length?S.pins.map(k=>`<span class="tag" onclick="openPage('${k}')">${lab(k)}</span>`).join(''):`<span class="mut">Kisi page pe jaake "Pin to Home" dabao</span>`},
+  notes:{g:'General',i:'mega',t:'Notes & Broadcast',h:()=>`<div class="li"><span>Staff meeting Friday 4 PM</span></div><div class="li"><span>New uniform policy</span></div>`}
 };
 
 
-/* =========================================================
-   PRESETS
-========================================================= */
-
 const PRESETS={
-
-manager:{
-  n:'Store Manager',
-  i:'store',
-  d:'Sales, team & alerts',
-  w:[
-    'sales',
-    'onshift',
-    'labor',
-    'lowinv',
-    'salesChart',
-    'shifts',
-    'timeoff',
-    'shortcuts'
-  ]
-},
-
-sched:{
-  n:'Scheduler',
-  i:'calendar',
-  d:'Shifts & coverage',
-  w:[
-    'onshift',
-    'coverage',
-    'shifts',
-    'timeoff',
-    'notes',
-    'shortcuts'
-  ]
-},
-
-payroll:{
-  n:'Payroll',
-  i:'clock',
-  d:'Punches & labor',
-  w:[
-    'punches',
-    'labor',
-    'violations',
-    'onshift',
-    'shortcuts'
-  ]
-},
-
-stock:{
-  n:'Inventory & Order',
-  i:'package',
-  d:'Stock & orders',
-  w:[
-    'lowinv',
-    'waste',
-    'cogs',
-    'orders',
-    'deliveries',
-    'shortcuts'
-  ]
-}
-
+  manager:{n:'Store Manager',i:'store',d:'Sales, team & alerts',w:['sales','onshift','labor','lowinv','salesChart','shifts','timeoff','shortcuts']},
+  sched:{n:'Scheduler',i:'calendar',d:'Shifts & coverage',w:['onshift','coverage','shifts','timeoff','notes','shortcuts']},
+  payroll:{n:'Payroll',i:'clock',d:'Punches & labor',w:['punches','labor','violations','onshift','shortcuts']},
+  stock:{n:'Inventory & Order',i:'package',d:'Stock & orders',w:['lowinv','waste','cogs','orders','deliveries','shortcuts']}
 };
 
 
@@ -1956,63 +1981,29 @@ stock:{
    STATE
 ========================================================= */
 
-const S =
-JSON.parse(localStorage.getItem('zipSuiteDemo') || '{}');
+const S = JSON.parse(localStorage.getItem('zipSuiteDemo') || '{}');
+S.name = S.name || 'User';
+S.dark = !!S.dark;
+S.landing = S.landing || 'home';
+S.pins = S.pins || ['schedule|Schedule', 'clock|My Punches'];
+S.widgets = S.widgets || PRESETS.manager.w.slice();
 
-S.name =
-S.name || 'User';
-
-S.dark =
-!!S.dark;
-
-S.landing =
-S.landing || 'home';
-
-S.pins =
-S.pins || [
-  'schedule|Schedule',
-  'clock|My Punches'
-];
-
-S.widgets =
-S.widgets || PRESETS.manager.w.slice();
-
-
-const save = () =>
-localStorage.setItem(
-  'zipSuiteDemo',
-  JSON.stringify(S)
-);
-
-
-const $ = id =>
-document.getElementById(id);
+const save = () => localStorage.setItem('zipSuiteDemo', JSON.stringify(S));
+const $ = id => document.getElementById(id);
 
 
 function toast(t){
-
   const e = $('toast');
-
   e.textContent = t;
-
   e.classList.add('show');
-
-  setTimeout(()=>{
-    e.classList.remove('show');
-  },1800);
-
+  setTimeout(()=>{ e.classList.remove('show'); },1800);
 }
 
 
 function lab(k){
-
   const p = k.split('|');
-
-  const m =
-    MENU.find(x=>x.id===p[0]);
-
-  return (m ? m.name+' › ' : '') +
-    p.slice(1).join(' › ');
+  const m = MENU.find(x=>x.id===p[0]);
+  return (m ? m.name+' › ' : '') + p.slice(1).join(' › ');
 }
 
 
@@ -2021,233 +2012,100 @@ function lab(k){
 ========================================================= */
 
 function kids(items,path){
-
   return items.map(it=>{
-
     if(typeof it === 'string'){
-
-      const k =
-        [...path,it].join('|');
-
-      return `
-        <div
-          class="mi"
-          data-k="${k}">
-          <span class="t">${it}</span>
-        </div>
-      `;
+      const k = [...path,it].join('|');
+      return `<div class="mi" data-k="${k}"><span class="t">${it}</span></div>`;
     }
-
-
     return `
       <div class="grpx">
-
-        <div
-          class="mi"
-          data-t="1">
-
-          <span class="t">
-            ${it.n}
-          </span>
-
-          <span class="arrow">
-            ${ic('right')}
-          </span>
-
+        <div class="mi" data-t="1">
+          <span class="t">${it.n}</span>
+          <span class="arrow">${ic('right')}</span>
         </div>
-
         <div class="children">
           ${kids(it.c,[...path,it.n])}
         </div>
-
       </div>
     `;
-
   }).join('');
-
 }
 
 
 function buildMenu(){
-
   $('menu').innerHTML = `
-
     <div class="mi" data-k="home">
       ${ic('home')}
       <span class="t">Home</span>
     </div>
-
-    <div class="label">
-      Modules
-    </div>
-
+    <div class="label">Modules</div>
     ${MENU.map(m=>`
-
       <div class="mod">
-
-        <div
-          class="mi"
-          data-t="1">
-
+        <div class="mi" data-t="1">
           <div class="mod-logo ${m.color}">
-
-            <img
-              src="${m.logo}"
-              alt="${m.name}"
-              onerror="this.style.display='none'"
-            >
-
+            <img src="${m.logo}" alt="${m.name}" onerror="this.style.display='none'">
           </div>
-
-                    <div class="mod-name">
-            ${m.name}
-          </div>
-
-          <span class="arrow">
-            ${ic('right')}
-          </span>
-
+          <div class="mod-name">${m.name}</div>
+          <span class="arrow">${ic('right')}</span>
         </div>
-
-
         <div class="children">
-
           ${kids(m.items,[m.id])}
-
         </div>
-
       </div>
-
     `).join('')}
-
   `;
-
 }
 
 
-/* CLICK EVENTS */
-
 document.addEventListener('click',e=>{
-
-  const t =
-    e.target.closest('[data-t]');
-
+  const t = e.target.closest('[data-t]');
   if(t){
-
     t.parentElement.classList.toggle('open');
-
     return;
   }
-
-
-  const k =
-    e.target.closest('[data-k]');
-
+  const k = e.target.closest('[data-k]');
   if(k){
-
     openPage(k.dataset.k);
-
-    $('side').classList.remove('show');
-
-    $('profile').classList.remove('open');
-
+    $('side').classList.remove('show');$('profile').classList.remove('open');
     return;
   }
-
-
   if(!e.target.closest('.profile')){
     $('profile').classList.remove('open');
   }
-
 });
 
 
-/* SEARCH */
-
 function filterMenu(q){
-
   q = q.toLowerCase();
-
-  document
-    .querySelectorAll('#menu .mi[data-k]')
-    .forEach(el=>{
-
-      const hit =
-        !q ||
-        el.textContent
-          .toLowerCase()
-          .includes(q);
-
-      el.style.display =
-        hit ? '' : 'none';
-
-      if(q && hit){
-
-        let p =
-          el.parentElement;
-
-        while(
-          p &&
-          p.id !== 'menu'
-        ){
-
-          if(
-            p.classList.contains('mod') ||
-            p.classList.contains('grpx')
-          ){
-            p.classList.add('open');
-          }
-
-          p = p.parentElement;
+  document.querySelectorAll('#menu .mi[data-k]').forEach(el=>{
+    const hit = !q || el.textContent.toLowerCase().includes(q);
+    el.style.display = hit ? '' : 'none';
+    if(q && hit){
+      let p = el.parentElement;
+      while(p && p.id !== 'menu'){
+        if(p.classList.contains('mod') || p.classList.contains('grpx')){
+          p.classList.add('open');
         }
-
+        p = p.parentElement;
       }
-
-    });
-
+    }
+  });
 }
 
 
-/* ACTIVE MENU */
-
 function mark(k){
-
-  document
-    .querySelectorAll('#menu .mi')
-    .forEach(x=>
-      x.classList.remove('active')
-    );
-
-  const el =
-    document.querySelector(
-      `#menu [data-k="${k}"]`
-    );
-
+  document.querySelectorAll('#menu .mi').forEach(x=>x.classList.remove('active'));
+  const el = document.querySelector(`#menu [data-k="${k}"]`);
   if(el){
-
     el.classList.add('active');
-
-    let p =
-      el.parentElement;
-
-    while(
-      p &&
-      p.id !== 'menu'
-    ){
-
-      if(
-        p.classList.contains('mod') ||
-        p.classList.contains('grpx')
-      ){
+    let p = el.parentElement;
+    while(p && p.id !== 'menu'){
+      if(p.classList.contains('mod') || p.classList.contains('grpx')){
         p.classList.add('open');
       }
-
-      p =
-        p.parentElement;
+      p = p.parentElement;
     }
-
   }
-
 }
 
 
@@ -2256,332 +2114,359 @@ function mark(k){
 ========================================================= */
 
 function openPage(k){
-
   mark(k);
-
-  const v =
-    $('view');
-
+  const v = $('view');
   window.scrollTo(0,0);
 
-
   if(k === 'home'){
-
-    v.innerHTML =
-      home();
-
+    v.innerHTML = home();
+    initOperationsDashboard();
   }
-
   else if(k === 'sys|Settings'){
-
-    v.innerHTML =
-      settings();
-
+    v.innerHTML = settings();
   }
-
   else if(k === 'sys|My Profile'){
-
-    v.innerHTML =
-      profile();
-
+    v.innerHTML = profile();
   }
-
   else if(k === 'sys|Logout'){
-
     v.innerHTML = `
-
       <div class="empty">
-
-        <div class="wi">
-          ${svg('logout')}
-        </div>
-
-        <h2>
-          You have been logged out
-        </h2>
-
-        <p style="margin:6px 0 16px">
-          Aap successfully logout ho gaye.
-        </p>
-
-        <button
-          class="btn"
-          onclick="openPage('home')">
-          Login again
-        </button>
-
+        <div class="wi">${svg('logout')}</div>
+        <h2>You have been logged out</h2>
+        <p style="margin:6px 0 16px">Aap successfully logout ho gaye.</p>
+        <button class="btn" onclick="openPage('home')">Login again</button>
       </div>
-
     `;
-
   }
-
   else{
-
-    const p =
-      k.split('|');
-
-    const sys =
-      p[0] === 'sys';
-
-    const pin =
-      S.pins.includes(k);
-
+    const p = k.split('|');
+    const sys = p[0] === 'sys';
+    const pin = S.pins.includes(k);
     v.innerHTML = `
-
       <div class="bar">
-
         <div>
-
-          <div class="crumb">
-            ${sys
-              ? 'Account'
-              : lab(k)
-                .split(' › ')
-                .slice(0,-1)
-                .join(' › ')
-            }
-          </div>
-
-          <h1>
-            ${p[p.length-1]}
-          </h1>
-
+          <div class="crumb">${sys ? 'Account' : lab(k).split(' › ').slice(0,-1).join(' › ')}</div>
+          <h1>${p[p.length-1]}</h1>
         </div>
-
-
-        ${sys
-          ? ''
-          : `
-            <button
-              class="btn g"
-              onclick="pinIt('${k}')">
-
-              ${svg('star')}
-
-              ${pin
-                ? 'Pinned'
-                : 'Pin to Home'}
-
-            </button>
-          `
-        }
-
+        ${sys ? '' : `<button class="btn g" onclick="pinIt('${k}')">${svg('star')}${pin ? 'Pinned' : 'Pin to Home'}</button>`}
       </div>
-
-
       <div class="ph2">
-
-        <h3
-          style="
-            color:var(--text);
-            font-size:15px;
-            margin-bottom:6px
-          ">
-
-          ${p[p.length-1]}
-
-        </h3>
-
-        <p>
-          Yahan is page ka content aayega.
-        </p>
-
+        <h3 style="color:var(--text);font-size:15px;margin-bottom:6px">${p[p.length-1]}</h3>
+        <p>Yahan is page ka content aayega.</p>
       </div>
-
     `;
-
   }
-
   hydrate();
-
 }
 
 
-/* PIN */
-
 function pinIt(k){
-
-  const i =
-    S.pins.indexOf(k);
-
+  const i = S.pins.indexOf(k);
   if(i > -1){
-
     S.pins.splice(i,1);
-
     save();
-
     openPage(k);
-
     toast('Removed from Home');
-
-  }
-  else{
-
+  } else {
     S.pins.push(k);
-
     save();
-
     openPage(k);
-
     toast('Pinned to Home');
-
   }
-
 }
 
 
 /* =========================================================
-   HOME
+   HOME (OPERATIONS DASHBOARD INTEGRATION)
 ========================================================= */
 
 function home(){
-
-  const h =
-    new Date().getHours();
-
-  const g =
-    h < 12
-      ? 'Good morning'
-      : h < 17
-        ? 'Good afternoon'
-        : 'Good evening';
-
-
-  const list =
-    S.widgets.filter(id=>WID[id]);
-
-
   return `
+    <div class="op-app">
 
-    <div class="bar">
+        <!-- ================= TOP BAR ================= -->
+        <div class="op-topbar">
+            <button class="op-select" id="taskFilter">
+                <span>▽ &nbsp; Pending Tasks</span>
+                <span>⌄</span>
+            </button>
 
-      <div>
-
-        <div class="crumb">
-          My Dashboard
-        </div>
-
-        <h1>
-          ${g}, ${S.name}
-        </h1>
-
-        <div class="sub">
-          Yeh aapka personal dashboard hai.
-          Jo dekhna hai wahi chuno.
-        </div>
-
-      </div>
-
-
-      <button
-        class="btn"
-        onclick="openPanel()">
-
-        ${svg('grid')}
-
-        Customize Dashboard
-
-      </button>
-
-    </div>
-
-
-    ${
-      list.length
-
-      ?
-
-            `<div class="grid dashboard-grid">
-
-        ${list.map(id=>{
-
-          const w =
-            WID[id];
-
-          return `
-
-            <div
-              class="w ${w.wide ? 'wide' : ''}">
-
-              <span
-                class="x"
-                title="Remove"
-                onclick="rm('${id}')">
-
-                ${svg('x')}
-
-              </span>
-
-
-              <div class="wh">
-
-                                <div class="wi wi-${w.i}">
-                  ${svg(w.i)}
+            <div class="op-date-control">
+                <button class="op-arrow" id="prevDay">‹</button>
+                <div class="op-date">
+                    ▣
+                    <span id="dateText">06/10/2026</span>
                 </div>
-
-                <h3>
-                  ${w.t}
-                </h3>
-
-              </div>
-
-              ${w.h()}
-
+                <button class="op-arrow" id="nextDay">›</button>
             </div>
 
-          `;
-
-        }).join('')}
-
-      </div>`
-
-      :
-
-      `
-
-      <div class="empty">
-
-        <div class="wi">
-          ${svg('grid')}
+            <button class="op-pdf-btn" title="Print / PDF" id="printBtn">▧</button>
         </div>
 
-        <h2>
-          Your dashboard is empty
-        </h2>
+        <!-- ================= KPI CARDS ================= -->
+        <section class="kpi-wrap">
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon blue">◉</span> Forecasted Sales <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
-        <p style="margin-bottom:16px">
-          Button dabao aur chuno
-          ki aapko kya dekhna hai.
-        </p>
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon violet">♧</span> Labor % <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">0.00%</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>0.00%</b></div>
+                </div>
+            </article>
 
-        <button
-          class="btn"
-          onclick="openPanel()">
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon red">♨</span> Time Loss <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
-          Choose what to see
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon mint">♧</span> Actual Sales <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
-        </button>
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon orange">◉</span> Labor $ <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
-      </div>
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon green">◈</span> Actual Usage % <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
-      `
-    }
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon purple">◉</span> Ideal Usage % <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
 
+            <article class="kpi">
+                <div class="kpi-head"><span class="kpi-icon orange">◉</span> Usage Variance <span class="kpi-chart">▥</span></div>
+                <div class="kpi-value">NA</div>
+                <div class="kpi-footer">
+                    <div>Yesterday<br><b>NA</b></div>
+                    <div>WTD<br><b>NA</b></div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ================= MAIN DASHBOARD ================= -->
+        <main class="op-dashboard">
+            <div class="op-hero">
+                <!-- START OF DAY -->
+                <div class="op-progress-bar">
+                    <div class="op-start">
+                        <strong>Start of Day</strong>
+                        <span class="op-pill">11:00 AM</span>
+                    </div>
+                    <div class="op-progress-right">
+                        <span>0/15 (%)</span>
+                        <div class="op-track"><span></span></div>
+                    </div>
+                </div>
+
+                <div class="op-rows">
+                    <!-- FORECAST -->
+                    <section class="op-row">
+                        <div class="op-row-title">
+                            <span class="op-section-icon purple">↗</span>
+                            <span>Forecast</span>
+                        </div>
+                        <div class="task-line">
+                            <div class="task red" data-name="Review Forecast">
+                                <span class="task-circle">▰</span>
+                                <span class="badge">1</span>
+                                <div class="task-label">Review<br>Forecast</div>
+                            </div>
+                            <div class="task yellow" data-name="Actual Sales">
+                                <span class="task-circle">$</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Actual<br>Sales</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FOOD MANAGEMENT -->
+                    <section class="op-row">
+                        <div class="op-row-title">
+                            <span class="op-section-icon pink">▣</span>
+                            <span>Food Management</span>
+                        </div>
+                        <div class="task-line">
+                            <div class="task yellow" data-name="Take Order">
+                                <span class="task-circle">▤</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Take Order</div>
+                            </div>
+                            <div class="task yellow" data-name="Inventory Alerts">
+                                <span class="task-circle">♟</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Inventory<br>Alerts</div>
+                            </div>
+                            <div class="task yellow" data-name="Inventory VIT Alerts">
+                                <span class="task-circle">♟</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Inventory<br>VIT Alerts</div>
+                            </div>
+                            <div class="task yellow" data-name="Ordering Alerts">
+                                <span class="task-circle">▣</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Ordering<br>Alerts</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- LABOR MANAGEMENT -->
+                    <section class="op-row">
+                        <div class="op-row-title">
+                            <span class="op-section-icon yellow">♟</span>
+                            <span>Labor Management</span>
+                        </div>
+                        <div class="task-line">
+                            <div class="task yellow" data-name="Schedule">
+                                <span class="task-circle">▦</span>
+                                <span class="badge">1</span>
+                                <div class="task-label">Schedule</div>
+                            </div>
+                            <div class="task yellow" data-name="Today's Pending Checklist">
+                                <span class="task-circle">▤</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Today's<br>Pending<br>Checklist</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- PAYROLL MANAGEMENT -->
+                    <section class="op-row">
+                        <div class="op-row-title">
+                            <span class="op-section-icon purple">♧</span>
+                            <span>Payroll Management</span>
+                        </div>
+                        <div class="task-line">
+                            <div class="task red" data-name="Non Posted Payroll">
+                                <span class="task-circle">▣</span>
+                                <span class="badge">7</span>
+                                <div class="task-label">Non Posted<br>Payroll</div>
+                            </div>
+                            <div class="task yellow" data-name="Previous Day Time Loss Summary">
+                                <span class="task-circle">◒</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Previous<br>Day Time<br>Loss<br>Summary</div>
+                            </div>
+                            <div class="task yellow" data-name="Previous Day Punches">
+                                <span class="task-circle">▣</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Previous<br>Day<br>Punches</div>
+                            </div>
+                            <div class="task yellow" data-name="Pending Punch Acknowledgement">
+                                <span class="task-circle">◎</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Pending<br>Punch<br>Acknowledgement</div>
+                            </div>
+                            <div class="task yellow" data-name="Mismatch Punches">
+                                <span class="task-circle">◎</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Mismatch<br>Punches</div>
+                            </div>
+                            <div class="task yellow" data-name="Overlap Punches">
+                                <span class="task-circle">▤</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Overlap<br>Punches</div>
+                            </div>
+                            <div class="task yellow" data-name="Long Hour Shift">
+                                <span class="task-circle">◷</span>
+                                <span class="badge">0</span>
+                                <div class="task-label">Long Hour<br>Shift</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
   `;
-
 }
 
 
-function rm(id){
+function initOperationsDashboard(){
+  const dateText = document.getElementById("dateText");
+  if(!dateText) return;
 
-  S.widgets =
-    S.widgets.filter(x=>x!==id);
+  let currentDate = new Date(2026, 9, 6);
 
-  save();
+  function formatDate(date) {
+    return String(date.getDate()).padStart(2, "0") + "/" +
+           String(date.getMonth() + 1).padStart(2, "0") + "/" +
+           date.getFullYear();
+  }
 
-  openPage('home');
+  function updateDate() {
+    dateText.textContent = formatDate(currentDate);
+  }
 
+  const prevBtn = document.getElementById("prevDay");
+  if(prevBtn){
+    prevBtn.addEventListener("click", function () {
+      currentDate.setDate(currentDate.getDate() - 1);
+      updateDate();
+    });
+  }
+
+  const nextBtn = document.getElementById("nextDay");
+  if(nextBtn){
+    nextBtn.addEventListener("click", function () {
+      currentDate.setDate(currentDate.getDate() + 1);
+      updateDate();
+    });
+  }
+
+  const taskFilter = document.getElementById("taskFilter");
+  if(taskFilter){
+    taskFilter.addEventListener("click", function () {
+      toast("Pending Tasks filter selected");
+    });
+  }
+
+  document.querySelectorAll(".task").forEach(function (task) {
+    task.addEventListener("click", function () {
+      toast(task.dataset.name + " selected");
+    });
+  });
+
+  const printBtn = document.getElementById("printBtn");
+  if(printBtn){
+    printBtn.addEventListener("click", function () {
+      window.print();
+    });
+  }
 }
 
 
@@ -2590,57 +2475,16 @@ function rm(id){
 ========================================================= */
 
 function profile(){
-
   return `
-
-    <div class="crumb">
-      Account
-    </div>
-
-    <h1 style="margin-bottom:18px">
-      My Profile
-    </h1>
-
-
-    <div
-      class="w"
-      style="max-width:460px">
-
-      <p
-        class="mut"
-        style="margin-bottom:8px">
-
-        Display name
-
-      </p>
-
-
-      <input
-        type="text"
-        id="nm"
-        value="${S.name}"
-      >
-
+    <div class="crumb">Account</div>
+    <h1 style="margin-bottom:18px">My Profile</h1>
+    <div class="w" style="max-width:460px">
+      <p class="mut" style="margin-bottom:8px">Display name</p>
+      <input type="text" id="nm" value="${S.name}">
       <br><br>
-
-
-      <button
-        class="btn"
-        onclick="
-          S.name=$('nm').value||'User';
-          save();
-          applyName();
-          toast('Profile saved')
-        ">
-
-        Save
-
-      </button>
-
+      <button class="btn" onclick="S.name=$('nm').value||'User';save();applyName();toast('Profile saved')">Save</button>
     </div>
-
   `;
-
 }
 
 
@@ -2649,353 +2493,106 @@ function profile(){
 ========================================================= */
 
 function settings(){
-
   const opts = [
-    ['home','My Dashboard (customized)']
+    ['home','My Dashboard (Operations Dashboard)']
   ].concat(
-
-    MENU.flatMap(m=>
-
-      m.items
-        .filter(i=>typeof i==='string')
-        .map(i=>[
-          m.id+'|'+i,
-          m.name+' › '+i
-        ])
-
+    MENU.flatMap(m =>
+      m.items.filter(i => typeof i==='string').map(i => [m.id+'|'+i, m.name+' › '+i])
     )
-
   );
 
-
   return `
-
-    <div class="crumb">
-      Account
-    </div>
-
-    <h1 style="margin-bottom:18px">
-      Settings
-    </h1>
-
-
+    <div class="crumb">Account</div>
+    <h1 style="margin-bottom:18px">Settings</h1>
     <div class="grid">
-
-
       <div class="w">
-
         <div class="wh">
-
-          <div class="wi">
-            ${svg('home')}
-          </div>
-
-          <h3>
-            Landing page
-          </h3>
-
+          <div class="wi">${svg('home')}</div>
+          <h3>Landing page</h3>
         </div>
-
-
-        <p
-          class="mut"
-          style="margin-bottom:10px">
-
-          Login ke baad sabse pehle
-          kaunsa page khule
-
-        </p>
-
-
+        <p class="mut" style="margin-bottom:10px">Login ke baad sabse pehle kaunsa page khule</p>
         <select id="ls">
-
-          ${opts.map(o=>`
-
-            <option
-              value="${o[0]}"
-              ${S.landing===o[0]
-                ? 'selected'
-                : ''}>
-
-              ${o[1]}
-
-            </option>
-
-          `).join('')}
-
+          ${opts.map(o=>`<option value="${o[0]}" ${S.landing===o[0]?'selected':''}>${o[1]}</option>`).join('')}
         </select>
-
-
         <br><br>
-
-
-        <button
-          class="btn"
-          onclick="
-            S.landing=$('ls').value;
-            save();
-            toast('Landing page saved')
-          ">
-
-          Save
-
-        </button>
-
+        <button class="btn" onclick="S.landing=$('ls').value;save();toast('Landing page saved')">Save</button>
       </div>
-
-
       <div class="w">
-
         <div class="wh">
-
-          <div class="wi">
-            ${svg('grid')}
-          </div>
-
-          <h3>
-            Dashboard
-          </h3>
-
+          <div class="wi">${svg('moon')}</div>
+          <h3>Appearance</h3>
         </div>
-
-
-        <button
-          class="btn"
-          onclick="openPanel()">
-
-          Customize Dashboard
-
-        </button>
-
-      </div>
-
-
-      <div class="w">
-
-        <div class="wh">
-
-          <div class="wi">
-            ${svg('moon')}
-          </div>
-
-          <h3>
-            Appearance
-          </h3>
-
-        </div>
-
-
         <label class="opt">
-
-          <input
-            type="checkbox"
-            ${S.dark ? 'checked' : ''}
-            onchange="toggleTheme()"
-          >
-
+          <input type="checkbox" ${S.dark ? 'checked' : ''} onchange="toggleTheme()">
           Dark mode
-
         </label>
-
       </div>
-
-
     </div>
-
   `;
-
 }
 
 
 /* =========================================================
-   CUSTOMIZE DASHBOARD
+   CUSTOMIZE DASHBOARD (Preset support)
 ========================================================= */
 
 function openPanel(){
-
   const groups = {};
-
-
-  Object.keys(WID)
-    .forEach(id=>{
-
-      (
-        groups[WID[id].g] =
-        groups[WID[id].g] || []
-      ).push(id);
-
-    });
-
+  Object.keys(WID).forEach(id=>{
+    (groups[WID[id].g] = groups[WID[id].g] || []).push(id);
+  });
 
   $('panel').innerHTML = `
-
-    <div
-      style="
-        display:flex;
-        justify-content:space-between;
-        align-items:center
-      ">
-
-      <h2>
-        Customize Dashboard
-      </h2>
-
-      <span
-        style="
-          cursor:pointer;
-          color:var(--muted)
-        "
-        onclick="closePanel()">
-
-        ${ic('x')}
-
-      </span>
-
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h2>Customize Dashboard</h2>
+      <span style="cursor:pointer;color:var(--muted)" onclick="closePanel()">${ic('x')}</span>
     </div>
-
-
-    <p
-      class="mut"
-      style="margin-top:4px">
-
-      Ready preset lo ya khud select karo.
-
-    </p>
-
-
+    <p class="mut" style="margin-top:4px">Ready preset lo ya khud select karo.</p>
     <div class="pre">
-
       ${Object.keys(PRESETS).map(k=>`
-
         <div onclick="usePreset('${k}')">
-
-          <b>
-
-            ${ic(PRESETS[k].i)}
-
-            ${PRESETS[k].n}
-
-          </b>
-
-          <span class="mut">
-            ${PRESETS[k].d}
-          </span>
-
+          <b>${ic(PRESETS[k].i)}${PRESETS[k].n}</b>
+          <span class="mut">${PRESETS[k].d}</span>
         </div>
-
       `).join('')}
-
     </div>
-
-
     ${Object.keys(groups).map(g=>`
-
-      <div class="grp">
-        ${g}
-      </div>
-
-      ${groups[g].map(id=>`
-
+      <div class="grp">${g}</div>${groups[g].map(id=>`
         <label class="opt">
-
-          <input
-            type="checkbox"
-            value="${id}"
-            ${S.widgets.includes(id)
-              ? 'checked'
-              : ''}
-          >
-
+          <input type="checkbox" value="${id}" ${S.widgets.includes(id)?'checked':''}>
           ${ic(WID[id].i)}
-
           ${WID[id].t}
-
         </label>
-
       `).join('')}
-
     `).join('')}
-
-
-    <div
-      style="
-        display:flex;
-        gap:10px;
-        margin-top:22px
-      ">
-
-      <button
-        class="btn"
-        onclick="applyPanel()">
-
-        Apply
-
-      </button>
-
-
-      <button
-        class="btn g"
-        onclick="
-          S.widgets=[];
-          save();
-          closePanel();
-          openPage('home')
-        ">
-
-        Clear all
-
-      </button>
-
+    <div style="display:flex;gap:10px;margin-top:22px">
+      <button class="btn" onclick="applyPanel()">Apply</button>
+      <button class="btn g" onclick="S.widgets=[];save();closePanel();openPage('home')">Clear all</button>
     </div>
-
   `;
-
-
   $('ov').classList.add('show');
-
 }
 
 
 function closePanel(){
-
   $('ov').classList.remove('show');
-
 }
 
 
 function usePreset(k){
-
-  S.widgets =
-    PRESETS[k].w.slice();
-
+  S.widgets = PRESETS[k].w.slice();
   save();
-
   openPanel();
-
-  toast(
-    PRESETS[k].n+' applied'
-  );
-
+  toast(PRESETS[k].n+' applied');
 }
 
 
 function applyPanel(){
-
-  S.widgets =
-    [
-      ...document.querySelectorAll(
-        '#panel input[type=checkbox]:checked'
-      )
-    ].map(i=>i.value);
-
+  S.widgets = [...document.querySelectorAll('#panel input[type=checkbox]:checked')].map(i=>i.value);
   save();
-
   closePanel();
-
   openPage('home');
-
   toast('Dashboard updated');
-
 }
 
 
@@ -3004,86 +2601,30 @@ function applyPanel(){
 ========================================================= */
 
 function applyName(){
-
-  $('avN').textContent =
-    S.name;
-
-  $('pdN').textContent =
-    S.name;
-
-  $('avI').textContent =
-    S.name[0].toUpperCase();
-
+  $('avN').textContent = S.name;
+  $('pdN').textContent = S.name;
+  $('avI').textContent = S.name[0].toUpperCase();
 }
 
 
 function toggleTheme(){
-
-  S.dark =
-    !S.dark;
-
-  document.body.classList.toggle(
-    'dark',
-    S.dark
-  );
-
+  S.dark = !S.dark;
+  document.body.classList.toggle('dark', S.dark);
   save();
-
 }
 
 
 function tick(){
-
-  const d =
-    new Date();
-
-  $('time').textContent =
-    d.toLocaleTimeString(
-      'en-IN',
-      {
-        hour:'2-digit',
-        minute:'2-digit'
-      }
-    );
-
-  $('date').textContent =
-    d.toLocaleDateString(
-      'en-IN',
-      {
-        weekday:'short',
-        day:'numeric',
-        month:'short',
-        year:'numeric'
-      }
-    );
-
+  const d = new Date();
+  $('time').textContent = d.toLocaleTimeString('en-IN', {hour:'2-digit', minute:'2-digit'});$('date').textContent = d.toLocaleDateString('en-IN', {weekday:'short', day:'numeric', month:'short', year:'numeric'});
 }
 
 
 function weather(){
-
-  fetch(
-    'https://api.open-meteo.com/v1/forecast?latitude=28.57&longitude=77.32&current_weather=true'
-  )
-
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=28.57&longitude=77.32&current_weather=true')
   .then(r=>r.json())
-
-  .then(j=>{
-
-    $('weather').textContent =
-      Math.round(
-        j.current_weather.temperature
-      )+'°C Noida';
-
-  })
-
-  .catch(()=>{
-
-    $('weather').textContent =
-      '28°C Noida';
-
-  });
-
+  .then(j=>{ $('weather').textContent = Math.round(j.current_weather.temperature)+'°C Noida'; })
+  .catch(()=>{ $('weather').textContent = '28°C Noida'; });
 }
 
 
@@ -3091,28 +2632,13 @@ function weather(){
    INIT
 ========================================================= */
 
-document.body.classList.toggle(
-  'dark',
-  S.dark
-);
-
+document.body.classList.toggle('dark', S.dark);
 buildMenu();
-
 applyName();
-
 tick();
-
-setInterval(
-  tick,
-  30000
-);
-
+setInterval(tick, 30000);
 weather();
-
-openPage(
-  S.landing
-);
-
+openPage(S.landing);
 hydrate();
 
 </script>
